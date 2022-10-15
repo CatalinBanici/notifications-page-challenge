@@ -1,23 +1,15 @@
 
-color {
-    color: hsl(0, 0%, 100%);
-    color: hsl(210, 60%, 98%);
-    color: hsl(211, 68%, 94%);
-    color: hsl(205, 33%, 90%);
-    color: hsl(219, 14%, 63%);
-    color: hsl(219, 12%, 42%);
-    color: hsl(224, 21%, 14%);
-}
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -30,41 +22,125 @@ body {
     background-color: hsl(210, 60%, 98%);
 }
 
+/* notification container */
 .notif-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: hsl(0, 0%, 100%);
-    max-width: 600px;
+    max-width: 700px;
 }
 
+/* notification header */
 .notif-header {
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2em 2em 0em 2em;
-    
+    margin: 2em 2em 0em 2em;  
 }
 
+.notif-title {
+    font-weight: bolder;
+    color: hsl(224, 21%, 14%);
+}
 
+.notif-number {
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    padding: 0em .5em;
+    border-radius: 5px;
+}
 
+.mark-all {
+    color: hsl(219, 12%, 42%);
+    cursor: pointer;
+}
+
+.mark-all:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+/*notification body*/
 .notif-body {
     display: flex;
     flex-direction: column;
     margin: 2em;
 }
 
+.notification {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    margin: .3em 0em;   
+}
 
+.notification p {
+    color: hsl(219, 12%, 42%);
+}
 
+.name {
+    font-weight: bolder;
+    text-decoration: none;
+    color: hsl(224, 21%, 14%);
+}
+
+.name:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.link a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: hsl(219, 12%, 42%);
+}
+
+.link a:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.chess-club a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: hsl(219, 85%, 26%);
+}
 
 .avatar {
     height: 40px;
     width: 40px;
+    margin: 0em 1em 0em 0em;
 }
 
 .photo {
     height: 40px;
     width: 40px;
+    margin-left: 12em;
+    cursor: pointer;
+    padding: 2px;
 }
+
+.photo:hover {
+    padding: 1px;
+    border: 1px hsl(205, 33%, 90%) solid;
+    border-radius: 5px;
+}
+
+.private-message {
+    padding: 1em;
+    border: 1px hsl(205, 33%, 90%) solid;
+    border-radius: 3px;
+    margin-top: .5em;
+    color: hsl(219, 14%, 63%);
+}
+
+.private-message:hover {
+    background-color: hsl(211, 68%, 94%);
+    border: 1px hsl(211, 68%, 94%) solid;
+    cursor: pointer;
+}
+
+.attribution {
+    margin-top: 1em;
+}
+
