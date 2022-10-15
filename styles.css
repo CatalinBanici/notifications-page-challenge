@@ -1,0 +1,70 @@
+
+color {
+    color: hsl(0, 0%, 100%);
+    color: hsl(210, 60%, 98%);
+    color: hsl(211, 68%, 94%);
+    color: hsl(205, 33%, 90%);
+    color: hsl(219, 14%, 63%);
+    color: hsl(219, 12%, 42%);
+    color: hsl(224, 21%, 14%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    height: 100vh;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(210, 60%, 98%);
+}
+
+.notif-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 600px;
+}
+
+.notif-header {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2em 2em 0em 2em;
+    
+}
+
+
+
+.notif-body {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+
+
+
+.avatar {
+    height: 40px;
+    width: 40px;
+}
+
+.photo {
+    height: 40px;
+    width: 40px;
+}
