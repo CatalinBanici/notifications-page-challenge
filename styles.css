@@ -74,6 +74,10 @@ body {
     flex-direction: row;
     padding: 1em;
     margin: .3em 0em;   
+    border-radius: 5px;
+    width: 100%;
+    /*to be removed dynamically*/
+    background-color: hsl(210, 60%, 98%);
 }
 
 .notification p {
@@ -115,15 +119,19 @@ body {
 .photo {
     height: 40px;
     width: 40px;
-    margin-left: 12em;
     cursor: pointer;
     padding: 2px;
+    float: right;
 }
 
 .photo:hover {
     padding: 1px;
     border: 1px hsl(205, 33%, 90%) solid;
     border-radius: 5px;
+}
+
+.text-div {
+    width: 100%;
 }
 
 .private-message {
@@ -142,5 +150,11 @@ body {
 
 .attribution {
     margin-top: 1em;
+}
+
+.new-icon i {
+    font-size: 10px;
+    color: rgb(255, 117, 4);
+    margin-left: 5px;
 }
 
