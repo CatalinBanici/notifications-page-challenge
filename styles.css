@@ -77,6 +77,10 @@ body {
     border-radius: 5px;
     width: 100%;
     /*to be removed dynamically*/
+    
+}
+
+.new-notification {
     background-color: hsl(210, 60%, 98%);
 }
 

@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.google.com/specimen/Plus+Jakarta+Sans">
-  <script defer src="./script.js"></script>
+  <script src="./script.js" defer></script>
   <script src="https://kit.fontawesome.com/85c1b76742.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | Notifications page</title>
@@ -30,9 +30,9 @@
       </div>
            
     </div>
-    <div class="notif-body">
+    <ul class="notif-body">
 
-      <div class="notification">
+      <li class="notification new-notification">
         <div>
           <a href="#"><img class="avatar" src="./assets/images/avatar-mark-webber.webp" alt="User Avatar"></a>
         </div>
@@ -40,9 +40,9 @@
           <p><a class="name" href="#">Mark Webber</a> reacted to your recent post <span class="link"><a href="#">My first tournament today!</a></span><span class="new-icon"><i class="fa-solid fa-circle"></i></span></p>
           <p>1m ago</p>
         </div>
-      </div>
+      </li>
       
-      <div class="notification">
+      <li class="notification new-notification">
         <div>
           <a href="#"><img class="avatar" src="./assets/images/avatar-angela-gray.webp" alt="User Avatar"></a>
         </div>
@@ -50,9 +50,9 @@
           <p><a class="name" href="#">Angela Gray</a> followed you<span class="new-icon"><i class="fa-solid fa-circle"></i></span></p>
           <p>5m ago</p>
         </div>
-      </div>
+      </li>
 
-      <div class="notification">
+      <li class="notification new-notification">
         <div>
           <a href="#"><img class="avatar" src="./assets/images/avatar-jacob-thompson.webp" alt="User Avatar"></a>
         </div>
@@ -60,9 +60,9 @@
           <p><a class="name" href="#">Jacob Thompson</a> has joined your group <span class="chess-club"><a href="#">Chess Club</a></span><span class="new-icon"><i class="fa-solid fa-circle"></i></span></p>
           <p>1 day ago</p>
         </div>
-      </div>
+      </li>
 
-      <div class="notification">
+      <li class="notification new-notification">
         <div>
           <a href="#"><img class="avatar" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="User Avatar"></a>
         </div>
@@ -72,9 +72,9 @@
           <p class="private-message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
             I'm already having lots of fun and improving my game.</p>
         </div>
-      </div>
+      </li>
 
-      <div class="notification">        
+      <li class="notification new-notification">        
         <div>
           <a href="#"><img class="avatar" src="./assets/images/avatar-kimberly-smith.webp" alt="User Avatar"></a>
         </div>
@@ -85,9 +85,9 @@
         <div>
           
         </div>
-      </div>
+      </li>
 
-      <div class="notification">
+      <li class="notification new-notification">
         <div>
           <a href="#"><img class="avatar" src="./assets/images/avatar-nathan-peterson.webp" alt="User Avatar"></a>
         </div>
@@ -95,9 +95,9 @@
           <p><a class="name" href="#">Nathan Peterson</a> reacted to your recent post <span class="link"><a href="#">5 end-game strategies to increase your win rate</a></span><span class="new-icon"><i class="fa-solid fa-circle"></i></span></p>
           <p>2 weeks ago</p>
         </div>
-      </div>
+      </li>
 
-      <div class="notification">
+      <li class="notification new-notification">
         <div>
           <a href="#"><img class="avatar" src="./assets/images/avatar-anna-kim.webp" alt="User Avatar"></a>
         </div>
@@ -105,10 +105,10 @@
           <p><a class="name" href="#">Anna Kim</a> left the group <span class="chess-club"><a href="#">Chess Club</a></span><span class="new-icon"><i class="fa-solid fa-circle"></i></span></p>
           <p>2 weeks ago</p>
         </div>
-      </div>
+      </li>
 
     </div>
-  </div>
+  </ul>
  
   <div class="attribution">
        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
