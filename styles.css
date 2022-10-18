@@ -75,12 +75,11 @@ body {
     padding: 1em;
     margin: .3em 0em;   
     border-radius: 5px;
-    width: 100%;
-    /*to be removed dynamically*/
-    
+    width: 100%;   
 }
 
-.new-notification {
+
+.new-notification { /*to be removed dynamically*/
     background-color: hsl(210, 60%, 98%);
 }
 
