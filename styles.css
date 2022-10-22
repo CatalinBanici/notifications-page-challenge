@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+@font-face { font-family: Plus Jakarta Sans; src: url('./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf'); } 
+
 html {
     display: flex;
     justify-content: center;
@@ -50,8 +52,10 @@ body {
 .notif-number {
     background-color: hsl(219, 85%, 26%);
     color: white;
-    padding: 0em .5em;
+    padding: .1em .7em;
+    margin-left: .4em;
     border-radius: 5px;
+    font-size: medium;
 }
 
 .mark-all {
@@ -143,7 +147,7 @@ body {
     border: 1px hsl(205, 33%, 90%) solid;
     border-radius: 3px;
     margin-top: .5em;
-    color: hsl(219, 14%, 63%);
+    color: hsl(219, 12%, 42%);
 }
 
 .private-message:hover {

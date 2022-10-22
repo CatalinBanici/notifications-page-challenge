@@ -16,7 +16,7 @@ function setToRead() {
 
             // updating the counter           
             notificationCounter.innerHTML--                
-        });              
+        }, { once: true });              
     }); 
        
 }
@@ -35,7 +35,7 @@ function markAllAsRead() {
 
             // updating the counter           
             notificationCounter.innerHTML--                
-        });              
+        }, { once: true });              
     }); 
     
 }
