@@ -1,6 +1,9 @@
 const notificationList = document.querySelectorAll('li');
 const markAll = document.querySelector('.mark-all');
 const notificationCounter = document.querySelector('.notif-number');
+const orangeDot = document.querySelectorAll('i');
+
+const notifArr = [];
 
 function setToRead() {
     
@@ -15,10 +18,16 @@ function setToRead() {
             iconSelector.removeChild(iconSelector.firstElementChild);   
 
             // updating the counter           
-            notificationCounter.innerHTML--                
-        }, { once: true });              
+            notifArr.pop();
+            notificationCounter.innerHTML = notifArr.length 
+
+        }, { once: true });  
+        
     }); 
-       
+    orangeDot.forEach(function(item){
+        notifArr.push(item);
+        notificationCounter.innerHTML = notifArr.length;
+    });
 }
 
 function markAllAsRead() {
@@ -33,8 +42,10 @@ function markAllAsRead() {
             const iconSelector = item.children[1].children[0].children[2];
             iconSelector.removeChild(iconSelector.firstElementChild);   
 
-            // updating the counter           
-            notificationCounter.innerHTML--                
+            // updating the counter 
+            notifArr.pop();
+            notificationCounter.innerHTML = notifArr.length          
+                           
         }, { once: true });              
     }); 
     
